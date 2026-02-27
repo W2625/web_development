@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: center;      /* 垂直居中 */
+    min-height: 100vh;        /* 高度撑满屏幕 */
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+div {
+    text-align: center;
+    background-color: antiquewhite;
+    width: 650px;
+    height: 300px;
+}
+
+.roboto-regular {
+    font-family: "Roboto", Arial, sans-serif;      /* 优先用 Roboto；如果没有，用系统默认无衬线字体 */
+    font-optical-sizing: auto;      /* 根据 字体大小，自动调整字形细节(auto：浏览器自动调（推荐），none：关闭自动调节) */
+    font-weight: 10;   /*可变字体支持 1–1000 的连续变化*/
+    font-style: normal;     /* 字体样式：normal：正常，italic：斜体；如果 Roboto 有可变斜体，这里也能平滑变化 */
+    font-variation-settings:    /*直接控制字体轴（axis）*/
+        "wdth" 100;     
+}
+
+h1 {
+    text-align: center;
+    color: #FFB7A5;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    font-weight: 500;
+}
+
+p {
+    margin-top: 0px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    padding-left: 175px;
+}
+
+input, select, button {
+    background: white;
+    border: 1px;
+    border-color: white;
+    border-radius: 4px;
+    width: 300px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid туршилт</title>
+    <style>
+        @media only screen and (min-width: 480px), (orientation:landscape) {
+            body {
+                background: red;
+            }
+        }
+
+        /* @media (min-width: 600px) {
+            body {
+                background: coral;
+            }
+        }
+        @media (max-width:599px) {
+            body {
+                background: aqua;
+            }
+        } */
+
+        section {
+            display: grid;
+            /* grid-template-columns: repeat(2, 1fr); */
+            /* grid-template-columns: 400px 300px 200px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template: 40% 50% 50px / 100px 50% 200px; */      /* -- grid-template-rows: 40% 50% 50px;grid-template-columns: 100px 50% 200px; */
+            /* grid-template-rows: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(2, 20px 50px); */
+            /* grid-template-columns: 100px minmax(100px, 500px)100px; */
+            /* gap: 0.5rem; */
+            /* grid-template-areas:  "article1 article2 article2" "article3 article3 article4"; */
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        /* .article-1 { grid-area: article1; }
+        .article-2 { grid-area: article2; }
+        .article-3 { grid-area: article3; }
+        .article-4 { grid-area: article4; } */
+
+        .article-1 {
+            grid-column: 1/5;
+            /* grid-column-start: 1; */
+            /* grid-column-end: 5; */
+        }
+
+        .article-2 {
+            grid-row-start: 2;
+            grid-row-end: 5;
+            /* grid-column-start: 1; */
+            /* grid-column-end: 3; */
+        }
+
+        .article-3 {
+            grid-row-start: 2;
+            grid-column-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        
+        .article-4 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        h1 {
+            background: rgb(237, 191, 117);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        article {
+            padding: 0.5rem;
+            /* margin: 0.35rem; */
+            background: rgb(58, 196, 145);
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Grid</h1>
+    </header>
+    <section>
+        <article class="article-1">
+            <h2>Нийтлэл нэг</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci sit temporibus consequuntur aliquam sunt aperiam corrupti, cum rerum asperiores?</p>
+        </article>
+        <article class="article-2">
+            <h2>Нийтлэл хоёр</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci sit temporibus consequuntur aliquam sunt aperiam corrupti, cum rerum asperiores?</p>
+        </article>
+        <article class="article-3">
+            <h2>Нийтлэл гурав</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci sit temporibus consequuntur aliquam sunt aperiam corrupti, cum rerum asperiores?</p>
+        </article>
+        <article class="article-4">
+            <h2>Нийтлэл дөрөв</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci sit temporibus consequuntur aliquam sunt aperiam corrupti, cum rerum asperiores?</p>
+        </article>
+    </section>
+</body>
+</html>

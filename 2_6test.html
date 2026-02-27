@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox туршилт</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        #container {
+            display: flex;
+            justify-content: center;    
+            align-items: stretch;
+            flex-direction: row-reverse;
+        }
+
+        .item {
+            background: #d9b99b;
+            border: #faf0e6 solid 1px;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<!-- 横向用 justify; 纵向用 align
+    justify-content 👉 横着怎么排
+    align-items👉 竖着怎么对齐 -->
+<body>
+    <div id="container">
+        <div class="item"><h3>Элемент 1</h3></div>
+        <div class="item"><h3>Элемент 2</h3></div>
+        <div class="item"><h3>Элемент 3</h3></div>
+        <div class="item"><h3>Элемент 4</h3></div>
+        <div class="item"><h3>Элемент 5</h3></div>
+        <div class="item"><h3>Элемент 6</h3></div>
+        <div class="item"><h3>Элемент 7</h3></div>
+    </div>
+</body>
+</html>
