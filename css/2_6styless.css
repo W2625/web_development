@@ -205,3 +205,123 @@ header .head-content h1 {
     height: 100%;
     color: #fff;
 }
+
+
+@media (max-width: 768px) {
+    /* ======== NAV ======== */
+     nav {
+        flex-direction: column;   /* 改成上下排列 */
+        align-items: center;      /* 居中 */
+        padding: 1rem 0.5rem;
+    }
+
+    nav h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;      /* 菜单横排 */
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 8px;
+        padding: 5px 8px;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    /* ========= Header ========= */
+    header {
+        height: 60vh;
+    }
+
+    .head-content {
+        gap: 20px;   /* 控制子元素之间的垂直间距 */
+    }
+
+    header .head-content h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .head-content p {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    /* ========= Section 1 ========= */
+    #section1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .section-text {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .section-text p {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .section-img {
+        flex: none;
+        width: 100%;
+        min-height: 300px;
+        margin-top: 20px;
+    }
+
+    /* ========= Section 2 ========= */
+    #section2 {
+        height: 60vh;
+    }
+
+    .section2-content h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .section2-content button {
+        width: 200px;
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    /* ========= Article ========= */
+    #article {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .article-title h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .article-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-detail div {
+        margin-bottom: 30px;
+    }
+
+    .article-detail p {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /* ========= Footer ========= */
+    #footer {
+        height: 8vh;
+    }
+}

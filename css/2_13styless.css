@@ -151,3 +151,83 @@ h3 span i {
     height: 100%;
     color: #fff;
 }
+
+
+@media (max-width: 768px) {
+    /* ======== NAV ======== */
+     nav {
+        flex-direction: column;   /* 改成上下排列 */
+        align-items: center;      /* 居中 */
+        padding: 1rem 0.5rem;
+    }
+
+    nav h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;      /* 菜单横排 */
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 8px;
+        padding: 5px 8px;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    /* ========= Section1 ========= */
+    #section1 {
+        grid-template-columns: 1fr;   /* 单列布局 */
+        height: auto;                 /* 取消固定高度 */
+        gap: 3rem;
+        padding: 3rem 1.5rem;         /* 去掉8rem */
+    }
+
+    .section-img {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;               /* 居中 */
+    }
+
+    .section-contents {
+        gap: 3rem;
+    }
+
+    .contents h3 {
+        font-size: 1.2rem;
+    }
+
+    .contents p {
+        font-size: 0.9rem;
+    }
+
+    /* ========= Section2 ========= */
+    #section2 {
+        height: 60vh;
+        padding: 2rem 1rem;
+    }
+
+    .section2-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .section2-content h1 {
+        font-size: 2rem;
+    }
+
+    .section2-content p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    /* ========= Footer ========= */
+    #footer {
+        height: 8vh;
+    }
+}

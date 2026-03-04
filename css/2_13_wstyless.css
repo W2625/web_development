@@ -102,3 +102,71 @@ h3 span i {
     height: 100%;
     color: #fff;
 }
+
+
+@media (max-width: 768px) {
+    /* ======== NAV ======== */
+     nav {
+        flex-direction: column;   /* 改成上下排列 */
+        align-items: center;      /* 居中 */
+        padding: 1rem 0.5rem;
+    }
+
+    nav h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;      /* 菜单横排 */
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 8px;
+        padding: 5px 8px;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    /* ========= Section1 ========= */
+    #section1 {
+        grid-template-columns: 1fr;   /* 改成单列 */
+        padding: 40px 20px;           /* 减少左右留白 */
+        gap: 40px;
+    }
+
+    .section-img img {
+        height: 300px;                /* 固定高度 */
+        border-radius: 8px;
+    }
+
+    .section-contents {
+        gap: 1.5rem;
+    }
+
+    .content-title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .contents {
+        grid-template-columns: 1fr auto;
+    }
+
+    .contents h3 {
+        font-size: 1rem;
+    }
+
+    .contents p {
+        font-size: 0.9rem;
+    }
+
+    /* ========= Footer ========= */
+    #footer {
+        height: 8vh;
+    }
+}

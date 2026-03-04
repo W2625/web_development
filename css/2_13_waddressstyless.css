@@ -132,3 +132,74 @@ h3 span i {
     height: 100%;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    /* ======== NAV ======== */
+     nav {
+        flex-direction: column;   /* 改成上下排列 */
+        align-items: center;      /* 居中 */
+        padding: 1rem 0.5rem;
+    }
+
+    nav h3 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: row;      /* 菜单横排 */
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 8px;
+        padding: 5px 8px;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    /* ========= Contact Section ========= */
+
+    #section {
+        padding: 40px 20px;
+        min-height: auto;
+    }
+
+    .section-address {
+        grid-template-columns: 1fr;   /* 改成单列 */
+        gap: 50px;
+    }
+
+    .address-info {
+        font-size: 1.2rem;            /* 缩小字体 */
+        line-height: 3;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .contact h3 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .contact form {
+        gap: 37px;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact form button {
+        font-size: 1rem;
+    }
+
+    /* ========= Footer ========= */
+    #footer {
+        height: 8vh;
+    }
+}
